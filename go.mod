@@ -1,4 +1,4 @@
-module github.com/ishihaya/crawling-example
+module github.com/ishihaya/crawling-web-site-list
 
 go 1.17
 
