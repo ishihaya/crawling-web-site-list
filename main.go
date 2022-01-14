@@ -103,10 +103,10 @@ func main() {
 	var word = flag.String("w", " ", "検索ワードを入力して下さい")
 	var start = flag.String("n", " ", "開始を入力してください")
 	flag.Parse()
-	log.Println("検索ワード:", *word)
+	// log.Println("検索ワード:", *word)
 	*word = strings.Replace(*word, " ", "+", -1)
 	firstURL := fmt.Sprintf("https://www.google.com/search?rlz=1C5CHFA_enJP962JP964&start=%s&q=%s", *start, string(*word))
-	log.Println("検索URL:", firstURL)
+	// log.Println("検索URL:", firstURL)
 	m := newMessage()
 	go m.execute()
 	m.req <- &request{

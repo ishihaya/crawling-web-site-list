@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"os"
 )
 
@@ -61,6 +60,6 @@ func (m *message) execute() {
 			}
 		}
 	}
-	log.Println("スクレイピング完了")
+	// log.Println("スクレイピング完了")
 	os.Exit(0)
 }
